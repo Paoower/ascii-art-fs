@@ -1,7 +1,7 @@
 package main
 
 import (
-	src "ascii-art/src"
+	src "ascii-art-fs/src"
 	"fmt"
 	"os"
 	"strings"
