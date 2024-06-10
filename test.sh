@@ -4,12 +4,14 @@ INPUTS=(
     "hello"
     "Hello There!"
     "Hello There!"
+    "Hello\nThere!"
 )
 
 BANNERS=(
     "standard"
     "shadow"
     "thinkertoy"
+    "train"
 )
 
 GO_PROGRAM="go run ."
