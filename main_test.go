@@ -1,7 +1,7 @@
 package main_test
 
 import (
-	src "ascii-art/src"
+	src "ascii-art-fs/src"
 	"strings"
 	"testing"
 )

@@ -14,3 +14,7 @@ The ```GetWord``` function takes a string as argument and applies the ```GetLett
 ## **[src/getletter.go](src/getletter.go)**
 
 The ```GetLetter``` function takes an int as argument repesenting the ASCII code of the character that needs to be turned into ASCII art. Its position in the banner file is calculated. A string is returned containing the ASCII art for the provided character.
+
+## **[src/getbanner.go](src/getbanner.go)**
+
+The ```GetBanner``` function takes a string as an argument representing the desired banner style. It returns the file path of the corresponding banner file. If the style provided is not recognized, an error is returned indicating the available styles.
