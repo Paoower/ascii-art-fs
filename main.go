@@ -10,7 +10,7 @@ import (
 func main() {
 	// Checking if the correct number of arguments is provided
 	if len(os.Args) < 2 || len(os.Args) > 3 {
-		fmt.Println("Please put a valid argument.")
+		fmt.Println("Usage: go run . [STRING] [BANNER]\nEX: go run . something standard")
 		return
 	}
 	// Get the input string and banner style from command line arguments
