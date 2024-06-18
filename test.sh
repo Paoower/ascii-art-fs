@@ -6,8 +6,8 @@ printf "\n \033[36m%s\033[0m" "////////////////////////TESTS////////////////////
 printf "\n \033[35m◼\033[0m : Input \033[32m◼\033[0m : Output \n"
 
 # Predefined test cases
-declare -a inputs=("banana" "hello" "hello world" "nice 2 meet you" "you & me" "123" "/(\")" "ABCDEFGHIJKLMNOPQRSTUVWXYZ" "\"#$%&/()*+,-./" "It's Working")
-declare -a banners=("standard abc" "standard" "shadow" "thinkertoy" "standard" "shadow" "thinkertoy" "shadow" "thinkertoy" "thinkertoy")
+declare -a inputs=("banana" "hello" "hello world" "nice 2 meet you" "you & me" "123" "/(\")" "ABCDEFGHIJKLMNOPQRSTUVWXYZ" "\"#$%&/()*+,-./" "It's Working" "Train")
+declare -a banners=("standard abc" "standard" "shadow" "thinkertoy" "standard" "shadow" "thinkertoy" "shadow" "thinkertoy" "thinkertoy" "train")
 
 # Loop through predefined test cases
 for i in "${!inputs[@]}"; do
