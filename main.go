@@ -37,7 +37,6 @@ func main() {
 		} else {
 			lines = append(lines, src.GetWord(word, bannerFile)...)
 		}
-
 	}
 
 	for _, line := range lines {
