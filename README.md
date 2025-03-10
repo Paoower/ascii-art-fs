@@ -1,20 +1,38 @@
-# Ascii Art FS
+# ASCII Art FS (File System)
 
-It's a program which consists in receiving a string as an argument and outputting the string in a graphic representation using ASCII.
-An optional arguments is the style of the output ASCII art. You can choose between standard, shadow and thinkerjoy.
+A command-line utility that generates ASCII art with enhanced file system operations.
 
-## **[main.go](main.go)**
+## Description
 
-First, arguments are being handled, and saved correctly. Each line of the input string is turned into ASCII art character by character.
+This program extends the basic ASCII art functionality by improving how it interacts with the file system. It provides better handling of banner files and can output the ASCII art to files.
 
-## **[src/getword.go](src/getword.go)**
+## Features
 
-The ```GetWord``` function takes a string as argument and applies the ```GetLetter``` function to each character. It returns a slice of string representing each line to display.
+- All base functionality of the ascii-art program
+- Improved file system interactions
+- Error handling for file operations
+- Support for output redirection
 
-## **[src/getletter.go](src/getletter.go)**
+## Usage
 
-The ```GetLetter``` function takes an int as argument repesenting the ASCII code of the character that needs to be turned into ASCII art. Its position in the banner file is calculated. A string is returned containing the ASCII art for the provided character.
+```bash
+go run . [STRING] [BANNER]
+go run . [STRING] [BANNER] --output=<filename>
+```
 
-## **[src/getbanner.go](src/getbanner.go)**
+Examples:
+```bash
+go run . "Hello World" standard
+go run . "Hello World" shadow --output=result.txt
+```
 
-The ```GetBanner``` function takes a string as an argument representing the desired banner style. It returns the file path of the corresponding banner file. If the style provided is not recognized, an error is returned indicating the available styles.
+## Implementation Details
+
+- Properly handles file not found errors
+- Creates output files if they don't exist
+- Validates banner files before processing
+- Safe file system operations
+
+## Requirements
+
+- Go 1.13 or higher
